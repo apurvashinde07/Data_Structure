@@ -48,6 +48,7 @@ int main()
     cout << "2.Subtraction" << endl;
     cout << "3.Multiplication" << endl;
     cout << "4.transpose" << endl;
+    cout << "5. Search Element"<<endl;
     cout << "Enter your choice";
     cin >> choice;
 
@@ -116,9 +117,30 @@ int main()
             cout << endl;
         }
         break;
+    case 5:     // SEARCH ELEMENT
+        int key, found = 0;
+        cout << "Enter element to search in Matrix A: ";
+        cin >> key;
+
+        for(i = 0; i < 2; i++) {
+            for(j = 0; j < 2; j++) {
+                if(A[i][j] == key) {
+                    cout << "Element found at position: (" 
+                        << i+1 << "," << j+1 << ")\n";
+                        
+                    found = 1;
+                }
+            }
+        }
+
+        if(!found)
+            cout << "Element not found.";
+        
+     break;
 
     default:
         cout << "invalid choice: ";
     }
     return 0;
+
 }
