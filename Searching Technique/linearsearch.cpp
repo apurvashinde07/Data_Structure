@@ -9,7 +9,7 @@ int linearsearch(int arr[], int size, int target){
           return i;  
         }    
     }
-    return -1;  //not found
+    return -1;  
     
 }
 int main(){
@@ -19,4 +19,5 @@ int main(){
 
     cout<<linearsearch(arr, size, target)<<endl;
     return 0;
+
 }
