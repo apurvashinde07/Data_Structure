@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-// -------- BUBBLE SORT --------
+//  BUBBLE SORT 
 void bubbleSort(int arr[], int n) {
     for(int i = 0; i < n-1; i++) {
         for(int j = 0; j < n-i-1; j++) {
@@ -11,7 +11,7 @@ void bubbleSort(int arr[], int n) {
     }
 }
 
-// -------- INSERTION SORT --------
+// INSERTION SORT
 void insertionSort(int arr[], int n) {
     for(int i = 1; i < n; i++) {
         int key = arr[i];
@@ -25,7 +25,7 @@ void insertionSort(int arr[], int n) {
     }
 }
 
-// -------- SELECTION SORT --------
+//  SELECTION SORT 
 void selectionSort(int arr[], int n) {
     for(int i = 0; i < n-1; i++) {
         int min = i;
@@ -100,7 +100,7 @@ void mergeSort(int arr[], int l, int r) {
     }
 }
 
-// -------- HEAP SORT --------
+//  HEAP SORT 
 void heapify(int arr[], int n, int i) {
     int largest = i;
     int left = 2*i + 1;
@@ -128,14 +128,14 @@ void heapSort(int arr[], int n) {
     }
 }
 
-// -------- DISPLAY FUNCTION --------
+//  DISPLAY FUNCTION 
 void display(int arr[], int n) {
     for(int i = 0; i < n; i++)
         cout << arr[i] << " ";
     cout << endl;
 }
 
-// -------- MAIN FUNCTION --------
+//  MAIN FUNCTION 
 int main() {
     int n, choice;
 
